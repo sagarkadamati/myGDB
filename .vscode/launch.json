@@ -22,6 +22,66 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "My GDB Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/myApp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            // "targetArchitecture": "arm",
+            // "miDebuggerServerAddress": "localhost:3333",
+            // "setupCommands": [
+            //     {
+            //         "description": "Enable pretty-printing for gdb",
+            //         "text": "-enable-pretty-printing",
+            //         "ignoreFailures": true
+            //     }
+            // ],
+            "linux": {
+                "miDebuggerPath": "/usr/bin/gdb"
+            },
+
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            },
+            // "customLaunchSetupCommands": [
+            //     {
+            //         "description": "Set remote target",
+            //         "text": "target remote localhost:3333"
+            //     },
+            //     {
+            //         "description": "Set remote target",
+            //         "text": "file BUILD/DISCO_F407VG/GCC_ARM/tracker.elf"
+            //     },
+            //     {
+            //         "description": "Set hardware breakpoints",
+            //         "text": "set remote hardware-breakpoint-limit 6"
+            //     },
+            //     {
+            //         "description": "Set hardware breakpoints",
+            //         "text": "set remote hardware-watchpoint-limit 4"
+            //     },
+            //     {
+            //         "description": "Reset 1",
+            //         "text": "monitor reset halt"
+            //     },
+            //     {
+            //         "description": "Load code",
+            //         "text": "load"
+            //     },
+            //     {
+            //         "description": "Reset 2",
+            //         "text": "monitor reset halt"
+            //     }
+            // ]
         }
     ]
 }
